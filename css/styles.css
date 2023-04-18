@@ -19,7 +19,6 @@ body {
 }
 a {
   text-align: center;
-  text-transform: capitalize;
   text-decoration: none !important;
 } 
 
@@ -255,53 +254,7 @@ main .containers {
 .slider span:hover img {
   transform: translateY(-50px) scale(1.2);
 }
-/* Contacto_index */
-.contacto {
-  background: linear-gradient(to right, #2c5364, #0f2027);
-  padding-top: 50px;
-  height: 100vh;
-}
-.contacto h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.contacto form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-.contacto label {
-  display: block;
-  margin-bottom: 10px;
-}
-.contacto input,
-.contacto textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-.contacto textarea {
-  height: 150px;
-}
-.contacto button[type="submit"] {
-  color: #000;
-  background-color: #00ffff;
-  font-size: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.contacto button[type="submit"]:hover {
-  color: white;
-  background-color: #000;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-}
+
 /* Semestres */
 #video_semestres {
   position: relative;	
@@ -315,6 +268,9 @@ main .containers {
 }
 #video_semestres::-webkit-media-controls {
   display: none !important;
+}
+.div_semestres {
+  margin-top: 0 !important;
 }
 .semestre{
   display: grid;
@@ -330,6 +286,13 @@ main .containers {
   border: 1px solid #ccc;
   padding: 20px;
   grid-column: 1/3;
+}
+.curso a {
+  color: #00ffff;
+}
+.curso a:hover {
+  transition: all 0.2s;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
 .contenido {
   display: grid;
@@ -384,6 +347,54 @@ main .containers {
   .contenido-invertido h3, .contenido-invertido p {
     padding-bottom: 10px;
   }
+}
+
+/* Contacto */
+.contacto {
+  background: linear-gradient(to right, #2c5364, #0f2027);
+  padding-top: 50px;
+  height: 100vh;
+}
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.contacto label {
+  display: block;
+  margin-bottom: 10px;
+}
+.contacto input,
+.contacto textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.contacto textarea {
+  height: 150px;
+}
+.contacto button[type="submit"] {
+  color: #000;
+  background-color: #00ffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.contacto button[type="submit"]:hover {
+  color: white;
+  background-color: #000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 /* Recursos */
