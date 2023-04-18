@@ -2,24 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <img src="img/slider_recursos/Photoshop_icon.png" alt="" class="card-img">
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h2 class="name">Photoshop</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="button">View More</button>
+            </div>
+        </div>
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <img src="img/slider_recursos/illustrator_icon.png" alt="" class="card-img">
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h2 class="name">Illustrator</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="button">View More</button>
+            </div>
+        </div>
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <img src="img/slider_recursos/Premiere_Pro_icon.png" alt="" class="card-img">
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h2 class="name">Premiere Pro</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="button">View More</button>
+            </div>
+        </div>
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <img src="img/slider_recursos/media_encoder_icon.png" alt="" class="card-img">
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h2 class="name">Media Encoder</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="button">View More</button>
+            </div>
+        </div>
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <img src="img/slider_recursos/Audition__icon.png" alt="" class="card-img">
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h2 class="name">Audition</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="button">View More</button>
+            </div>
+        </div>
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <img src="img/slider_recursos/After_Effects_icon.png" alt="" class="card-img">
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h2 class="name">After Effects</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="button">View More</button>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
