@@ -1,5 +1,5 @@
 // API para noticias
-let cantidadNoticias = 5;
+let cantidadNoticias = 9;
 let pageFinal = cantidadNoticias;
 let pageInicial = 0;
 let temaActual = "Tecnología";

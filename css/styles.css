@@ -246,6 +246,31 @@ main .containers {
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
 }
+.slider span a span {
+  position: absolute;;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.slider span:hover a span {
+  transform: translateY(-50px) scale(1.2);
+  opacity: 1;
+  background-color: #00ffff88;
+  border-radius: 50px;
+}
+
 .slider span img {
   position: absolute;
   top: 0;
@@ -254,7 +279,7 @@ main .containers {
   height: 100%;
   border-radius: 50px;
   object-fit: cover;
-  transition: 2s;
+  transition: 0.3s;
 }
 .slider span:hover img {
   transform: translateY(-50px) scale(1.2);
@@ -266,6 +291,7 @@ main .containers {
   grid-gap:30px;
   padding-bottom: 20px;
   color: #000;
+  justify-items: center;
 }
 .container-noticias .item{
   background-color: #eee;
