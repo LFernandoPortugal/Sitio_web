@@ -69,7 +69,12 @@ ul, li {
   font-size: 2.5rem;
   z-index: 1;
   font-weight: bold;
-  color: white;;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.logo_img {
+  width: 60px;
 }
 .nav_menu,
 .nav_close {
